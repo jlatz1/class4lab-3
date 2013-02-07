@@ -40,6 +40,7 @@ public class AreaController extends HttpServlet {
         double width = Double.valueOf(request.getParameter("width"));
         request.setAttribute("width", width);
         double area = this.getArea(length, width);
+        request.setAttribute("area", area);
         
         RequestDispatcher view =
                 request.getRequestDispatcher(DESTINATION);

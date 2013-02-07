@@ -39,7 +39,10 @@ public class AreaCircleController extends HttpServlet {
        double pi = 3.14159265359;
        request.setAttribute("pi", pi);
        double areaOfCircle = this.getAreaOfCircle(radius, pi);
+       request.setAttribute("areaOfCircle", areaOfCircle);
        out.println("Area of circle: " + " " + areaOfCircle);
+       
+               
                RequestDispatcher view =
                 request.getRequestDispatcher(DESTINATION);
         view.forward(request, response);

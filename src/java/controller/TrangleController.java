@@ -40,6 +40,7 @@ public class TrangleController extends HttpServlet {
       
         
         double thirdSide = this.getThirdSide(a, b);
+        request.setAttribute("thirdSide", thirdSide);
         
         out.println("The hypotunuse is: " + " " + thirdSide);
          RequestDispatcher view =
