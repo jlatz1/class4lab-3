@@ -61,7 +61,7 @@ public class AreaController extends HttpServlet {
        request.setAttribute("areaOfCircle", areaOfCircle);
        out.println("Area of circle: " + " " + areaOfCircle);
         
-        }else{
+       /* }else{
             calc = "Hypotenuse";
         double a = Double.valueOf(request.getParameter("a"));
         request.setAttribute("a", a);
@@ -70,7 +70,7 @@ public class AreaController extends HttpServlet {
       
         
         double thirdSide = this.getThirdSide(a, b);
-        request.setAttribute("thirdSide", thirdSide);
+        request.setAttribute("thirdSide", thirdSide);*/
         }
         RequestDispatcher view =
                 request.getRequestDispatcher(DESTINATION);
