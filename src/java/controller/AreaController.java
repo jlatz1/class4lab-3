@@ -19,6 +19,10 @@ import javax.servlet.RequestDispatcher;
 @WebServlet(name = "AreaController", urlPatterns = {"/AreaController"})
 public class AreaController extends HttpServlet {
     private static final String DESTINATION = "/answer.jsp"; 
+    private static final String AREA = "area";
+    private static final String CIRCLE = "circle";
+    private static final String CALCULATION = "calculation";
+    
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
@@ -33,15 +37,41 @@ public class AreaController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        
+        String calculation = request.getParameter(CALCULATION);
+        String calc = "";
+        
      
-     
+        if(CALCULATION.equals(AREA)){
+            calc = "Area of a rectangle";
         double length = Double.valueOf(request.getParameter("length"));
         request.setAttribute("length", (length));
         double width = Double.valueOf(request.getParameter("width"));
         request.setAttribute("width", width);
         double area = this.getArea(length, width);
         request.setAttribute("area", area);
+        }
+        else if(CALCULATION.equals(CIRCLE)){
+            calc = "Area of a circle";
+       double radius = Double.valueOf(request.getParameter("radius"));
+       request.setAttribute("radius", (radius));
+       double pi = 3.14159265359;
+       request.setAttribute("pi", pi);
+       double areaOfCircle = this.getAreaOfCircle(radius, pi);
+       request.setAttribute("areaOfCircle", areaOfCircle);
+       out.println("Area of circle: " + " " + areaOfCircle);
         
+        }else{
+            calc = "Hypotenuse";
+        double a = Double.valueOf(request.getParameter("a"));
+        request.setAttribute("a", a);
+        double b = Double.valueOf(request.getParameter("b"));
+        request.setAttribute("b", b);
+      
+        
+        double thirdSide = this.getThirdSide(a, b);
+        request.setAttribute("thirdSide", thirdSide);
+        }
         RequestDispatcher view =
                 request.getRequestDispatcher(DESTINATION);
         view.forward(request, response);
@@ -93,5 +123,15 @@ public class AreaController extends HttpServlet {
     
      public double getArea(double length, double width) {
         return length * width;
+    }
+     
+     public double getAreaOfCircle(double radius, double pi){
+    
+        return radius * (pi * pi);
+    }
+     
+       public double getThirdSide(double a, double b){
+        double thirdSide = Math.sqrt((a * a) + (b * b));
+        return thirdSide;
     }
 }
