@@ -38,8 +38,9 @@
       }
       
       %>
-      
-      <a href="index.jsp">Back to calculator home</a>
+      </br>
+      <p> So here are your answers</p>
+      <p> <a href="index.jsp">Back to calculator home</a></p>
       
     </body>
 </html>
