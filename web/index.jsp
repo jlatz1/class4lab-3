@@ -18,13 +18,14 @@
         <form id="RectForm" name="rectForm" method="POST" action="AreaController">
             <table width="200" cell-padding="3" cell-spacing="3" border="0">
                 <tr>
-                    <td>Length: 
-                        <input id="length" name="length" type="text"></td>
-                    <td>Width: 
-                        <input id="width" name="width" type="text"></td>
+                    <td>Length:</td> 
+                    <td><input id="length" name="length" type="text"></td>
+                    <td>Width:</td> 
+                    <td><input id="width" name="width" type="text"></td>
                 </tr>
                 <tr>
-            <input type="submit" name="calculate" value="calculate"></tr>
+            <td input type="submit" name="calculate" value="calculate"></td>
+                </tr>
             </table>
             
         </form>
@@ -33,11 +34,12 @@
         <form id="CircleForm" name="CircleForm" method="POST" action="AreaCircleController">
             <table width="200" cell-padding="3" cell-spacing="3" border="0">
                 <tr>
-                    <td>Radius: 
-                        <input id="radius" name="radius" type="text"></td>
+                    <td>Radius:</td> 
+                    <td><input id="radius" name="radius" type="text"></td>
                 </tr>
                 <tr>
-            <input type="submit" name="submit" value="calculate"></tr>
+            <td input type="submit" name="submit" value="calculate"></td>
+                </tr>
             </table>
         </form>
         
@@ -45,14 +47,15 @@
         <form id="TraingleForm" name="TraingleForm" method="POST" action="TrangleController">
             <table width="200" cell-padding="3" cell-spacing="3" border="0">
                 <tr>
-                    <td> a: 
-                        <input id="a" name="a" type="text"></td>
+                    <td> a:</td> 
+                    <td><input id="a" name="a" type="text"></td>
                     
-                    <td>b: 
-                        <input id="b" name="b" type="text"></td>
+                    <td>b:</td> 
+                    <td><input id="b" name="b" type="text"></td>
                 </tr>
                 <tr>
-            <input type="submit" name="submit" value="calculate"></tr>
+            <td input type="submit" name="submit" value="calculate"></td>
+                </tr>
             </table>
         </form>
         
