@@ -35,12 +35,7 @@ public class AreaController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        
-     
-        
-     
-    
-          
+       
         double length = Double.valueOf(request.getParameter("length"));
         request.setAttribute("length", (length));
         double width = Double.valueOf(request.getParameter("width"));
@@ -48,10 +43,6 @@ public class AreaController extends HttpServlet {
         double area = this.getArea(length, width);
         request.setAttribute("area", area);
         
-       
-       
-        
-      
         RequestDispatcher view =
                 request.getRequestDispatcher(DESTINATION);
         view.forward(request, response);
