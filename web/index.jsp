@@ -19,13 +19,13 @@
             <table width="200" cell-padding="3" cell-spacing="3" border="0">
                 <tr>
                     <td>Length:</td> 
-                    <td><input id="length" name="length" type="text"></td>
+                    <td><input id="length" name="length" type="text"/></td>
                  
                     <td>Width:</td> 
-                    <td><input id="width" name="width" type="text"></td>
+                    <td><input id="width" name="width" type="text"/></td>
                 </tr>
                 <tr>
-                    <td> <input type="submit" name="calculate" value="calculate"></td>
+                    <td> <input type="submit" name="calculate" value="calculate"/></td>
                 </tr>
             </table>
             
@@ -36,10 +36,10 @@
             <table width="200" cell-padding="3" cell-spacing="3" border="0">
                 <tr>
                     <td>Radius:</td> 
-                    <td><input id="radius" name="radius" type="text"></td>
+                    <td><input id="radius" name="radius" type="text"/></td>
                 </tr>
                 <tr>
-                    <td> <input type="submit" name="submit" value="calculate"></td>
+                    <td> <input type="submit" name="submit" value="calculate"/></td>
                 </tr>
             </table>
         </form>
@@ -49,13 +49,13 @@
             <table width="200" cell-padding="3" cell-spacing="3" border="0">
                 <tr>
                     <td>a:</td> 
-                    <td><input id="a" name="a" type="text"></td>
+                    <td><input id="a" name="a" type="text"/></td>
                     
                     <td>b:</td> 
-                    <td><input id="b" name="b" type="text"></td>
+                    <td><input id="b" name="b" type="text"/></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" name="submit" value="calculate"></td>
+                    <td><input type="submit" name="submit" value="calculate"/></td>
                 </tr>
             </table>
         </form>
