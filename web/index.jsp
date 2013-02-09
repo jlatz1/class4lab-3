@@ -24,7 +24,7 @@
                     <td><input id="width" name="width" type="text"></td>
                 </tr>
                 <tr>
-            <td input type="submit" name="calculate" value="calculate"></td>
+                    <td> <input type="submit" name="calculate" value="calculate"></td>
                 </tr>
             </table>
             
@@ -38,7 +38,7 @@
                     <td><input id="radius" name="radius" type="text"></td>
                 </tr>
                 <tr>
-            <td input type="submit" name="submit" value="calculate"></td>
+                    <td> <input type="submit" name="submit" value="calculate"></td>
                 </tr>
             </table>
         </form>
@@ -54,7 +54,7 @@
                     <td><input id="b" name="b" type="text"></td>
                 </tr>
                 <tr>
-            <td input type="submit" name="submit" value="calculate"></td>
+                    <td> <input type="submit" name="submit" value="calculate"></td>
                 </tr>
             </table>
         </form>
