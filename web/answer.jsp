@@ -11,8 +11,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Answers!</title>
     </head>
+    <h2>Here is what you selected!</h2>
     <body>
       <% 
       Object oArea = request.getAttribute("area");
@@ -22,14 +23,18 @@
       }else{
           out.println("Cannot be null!! Close, but no cigar!!");
       }
+      %>
+      </br>
           
-      Object oCircle = request.getAttribute("areaOfCircle");
+     <% Object oCircle = request.getAttribute("areaOfCircle");
       if(oCircle != null){
           out.println("The area of the circle is: " + oCircle);
       }else{
           out.println("Really!! It's null!! Close, but no cigar!!");
       }
-      
+      %>
+      </br>
+      <%
       Object oThird = request.getAttribute("thirdSide");
       if(oThird != null){
           out.println("The hypotenuse is: " + oThird);
