@@ -20,6 +20,7 @@
                 <tr>
                     <td>Length:</td> 
                     <td><input id="length" name="length" type="text"></td>
+                    </br>
                     <td>Width:</td> 
                     <td><input id="width" name="width" type="text"></td>
                 </tr>
@@ -47,14 +48,14 @@
         <form id="TraingleForm" name="TraingleForm" method="POST" action="TrangleController">
             <table width="200" cell-padding="3" cell-spacing="3" border="0">
                 <tr>
-                    <td> a:</td> 
+                    <td>a:</td> 
                     <td><input id="a" name="a" type="text"></td>
-                    
+                    </br>
                     <td>b:</td> 
                     <td><input id="b" name="b" type="text"></td>
                 </tr>
                 <tr>
-                    <td> <input type="submit" name="submit" value="calculate"></td>
+                    <td><input type="submit" name="submit" value="calculate"></td>
                 </tr>
             </table>
         </form>
