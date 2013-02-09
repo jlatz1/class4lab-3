@@ -20,7 +20,8 @@
                 <tr>
                     <td>Length:</td> 
                     <td><input id="length" name="length" type="text"/></td>
-                 
+                </tr>
+                <tr>
                     <td>Width:</td> 
                     <td><input id="width" name="width" type="text"/></td>
                 </tr>
@@ -50,7 +51,8 @@
                 <tr>
                     <td>a:</td> 
                     <td><input id="a" name="a" type="text"/></td>
-                    
+                </tr>
+                <tr>
                     <td>b:</td> 
                     <td><input id="b" name="b" type="text"/></td>
                 </tr>
