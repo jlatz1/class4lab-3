@@ -16,11 +16,9 @@ import javax.servlet.RequestDispatcher;
  *
  * @author Jessie
  */
-@WebServlet(name = "AreaController", urlPatterns = {"/AreaController"})
-public class AreaController extends HttpServlet {
-    private static final String DESTINATION = "/answer.jsp"; 
-
-    
+@WebServlet(name = "TrangleController", urlPatterns = {"/TrangleController"})
+public class TrangleController extends HttpServlet {
+          private static final String DESTINATION = "/answer.jsp"; 
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
@@ -35,27 +33,19 @@ public class AreaController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        
-     
-        
-     
-    
-          
-        double length = Double.valueOf(request.getParameter("length"));
-        request.setAttribute("length", (length));
-        double width = Double.valueOf(request.getParameter("width"));
-        request.setAttribute("width", width);
-        double area = this.getArea(length, width);
-        request.setAttribute("area", area);
-        
-       
-       
-        
+        double a = Double.valueOf(request.getParameter("a"));
+        request.setAttribute("a", a);
+        double b = Double.valueOf(request.getParameter("b"));
+        request.setAttribute("b", b);
       
-        RequestDispatcher view =
+        
+        double thirdSide = this.getThirdSide(a, b);
+        request.setAttribute("thirdSide", thirdSide);
+        
+        //out.println("The hypotunuse is: " + " " + thirdSide);
+         RequestDispatcher view =
                 request.getRequestDispatcher(DESTINATION);
         view.forward(request, response);
-     
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -88,8 +78,6 @@ public class AreaController extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
     }
-    
-    
 
     /**
      * Returns a short description of the servlet.
@@ -101,8 +89,8 @@ public class AreaController extends HttpServlet {
         return "Short description";
     }// </editor-fold>
     
-     public double getArea(double length, double width) {
-        return length * width;
+    public double getThirdSide(double a, double b){
+        double thirdSide = Math.sqrt((a * a) + (b * b));
+        return thirdSide;
     }
-
 }

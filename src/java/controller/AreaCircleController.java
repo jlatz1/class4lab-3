@@ -16,11 +16,9 @@ import javax.servlet.RequestDispatcher;
  *
  * @author Jessie
  */
-@WebServlet(name = "AreaController", urlPatterns = {"/AreaController"})
-public class AreaController extends HttpServlet {
-    private static final String DESTINATION = "/answer.jsp"; 
-
-    
+@WebServlet(name = "AreaCircleController", urlPatterns = {"/AreaCircleController"})
+public class AreaCircleController extends HttpServlet {
+      private static final String DESTINATION = "/answer.jsp"; 
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
@@ -36,26 +34,18 @@ public class AreaController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         
-     
-        
-     
-    
-          
-        double length = Double.valueOf(request.getParameter("length"));
-        request.setAttribute("length", (length));
-        double width = Double.valueOf(request.getParameter("width"));
-        request.setAttribute("width", width);
-        double area = this.getArea(length, width);
-        request.setAttribute("area", area);
-        
+       double radius = Double.valueOf(request.getParameter("radius"));
+       request.setAttribute("radius", (radius));
+       double pi = 3.14159265359;
+       request.setAttribute("pi", pi);
+       double areaOfCircle = this.getAreaOfCircle(radius, pi);
+       request.setAttribute("areaOfCircle", areaOfCircle);
+       //out.println("Area of circle: " + " " + areaOfCircle);
        
-       
-        
-      
-        RequestDispatcher view =
+               
+               RequestDispatcher view =
                 request.getRequestDispatcher(DESTINATION);
         view.forward(request, response);
-     
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -88,8 +78,6 @@ public class AreaController extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
     }
-    
-    
 
     /**
      * Returns a short description of the servlet.
@@ -101,8 +89,8 @@ public class AreaController extends HttpServlet {
         return "Short description";
     }// </editor-fold>
     
-     public double getArea(double length, double width) {
-        return length * width;
+     public double getAreaOfCircle(double radius, double pi){
+    
+        return radius * (pi * pi);
     }
-
 }
