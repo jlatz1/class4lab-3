@@ -39,7 +39,7 @@
       
       %>
       
-      
+      <a href="index.jsp">Back to calculator home</a>
       
     </body>
 </html>
