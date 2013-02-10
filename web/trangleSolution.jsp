@@ -23,5 +23,6 @@
       }
       
       %>
+      <p> <a href="index.jsp">Back to calculator home</a></p>
     </body>
 </html>
