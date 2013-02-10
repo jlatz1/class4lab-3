@@ -24,27 +24,7 @@
           out.println("Cannot be null!! Close, but no cigar!!");
       }
       %>
-      </br>
-          
-     <% Object oCircle = request.getAttribute("areaOfCircle");
-      if(oCircle != null){
-          out.println("The area of the circle is: " + oCircle);
-      }else{
-          out.println("Really!! It's null!! Close, but no cigar!!");
-      }
-      %>
-      </br>
-      <%
-      Object oThird = request.getAttribute("thirdSide");
-      if(oThird != null){
-          out.println("The hypotenuse is: " + oThird);
-      }else{
-          out.println("I said it can't be null!! How many times must I tell you!!");
-      }
-      
-      %>
-      </br>
-      <p> So here are your answers</p>
+     
       <p> <a href="index.jsp">Back to calculator home</a></p>
       
     </body>
