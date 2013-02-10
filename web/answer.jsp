@@ -13,7 +13,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Answers!</title>
     </head>
-    <h2>Here is what you selected!</h2>
+    <h1>Here is the area of the rectangle!</h1>
     <body>
       <% 
       Object oArea = request.getAttribute("area");
