@@ -29,7 +29,7 @@
                     <td> <input type="submit" name="calculate" value="calculate"/></td>
                 </tr>
                 <tr>
-                    <td><h3>Area of Rectangle</h3></td>
+                    <td><p>Area of Rectangle</p></td>
                     <td>
                          <% 
       Object oArea = request.getAttribute("area");
@@ -58,7 +58,7 @@
                     <td> <input type="submit" name="submit" value="calculate"/></td>
                 </tr>
                 <tr>
-                    <td><h3>Area of Circle</h3></td>
+                    <td><p>Area of Circle</p></td>
                     <td>
      <% Object oCircle = request.getAttribute("areaOfCircle");
       if(oCircle != null){
@@ -87,9 +87,9 @@
                     <td><input type="submit" name="submit" value="calculate"/></td>
                 </tr>
                 <tr>
-                    <td><h3>Hypotenuse of Triangle</h3></td>
+                    <td><p>Hypotenuse of Triangle</p></td>
                     <td>
-                                  <%
+      <%
       Object oThird = request.getAttribute("thirdSide");
       if(oThird != null){
           out.println("The hypotenuse is: " + oThird);
