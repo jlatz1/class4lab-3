@@ -28,6 +28,21 @@
                 <tr>
                     <td> <input type="submit" name="calculate" value="calculate"/></td>
                 </tr>
+                <tr>
+                    <td><h3>Area of Rectangle</h3></td>
+                    <td>
+                         <% 
+      Object oArea = request.getAttribute("area");
+      if(oArea != null){
+          out.println("The area is: " + oArea);
+          
+      }else{
+          out.println("Cannot be null!! Close, but no cigar!!");
+      }
+      %>
+                    </td>
+                        
+                </tr>
             </table>
             
         </form>
@@ -41,6 +56,18 @@
                 </tr>
                 <tr>
                     <td> <input type="submit" name="submit" value="calculate"/></td>
+                </tr>
+                <tr>
+                    <td><h3>Area of Circle</h3></td>
+                    <td>
+     <% Object oCircle = request.getAttribute("areaOfCircle");
+      if(oCircle != null){
+          out.println("The area of the circle is: " + oCircle);
+      }else{
+          out.println("Really!! It's null!! Close, but no cigar!!");
+      }
+      %>
+                    </td>
                 </tr>
             </table>
         </form>
@@ -58,6 +85,21 @@
                 </tr>
                 <tr>
                     <td><input type="submit" name="submit" value="calculate"/></td>
+                </tr>
+                <tr>
+                    <td><h3>Hypotenuse of Triangle</h3></td>
+                    <td>
+                                  <%
+      Object oThird = request.getAttribute("thirdSide");
+      if(oThird != null){
+          out.println("The hypotenuse is: " + oThird);
+      }else{
+          out.println("I said it can't be null!! How many times must I tell you!!");
+      }
+      
+      %>
+                    </td>
+                    
                 </tr>
             </table>
         </form>
