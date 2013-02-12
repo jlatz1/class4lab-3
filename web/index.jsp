@@ -28,9 +28,10 @@
                 <tr>
                     <td> <input type="submit" name="calculate" value="calculate"/></td>
                 </tr>
-                <tr>
-                    <td><p>Area of Rectangle:</p></td>
-                    <td>
+                   </table>
+                
+                    <p>Area of Rectangle:</p>
+                    
                          <% 
       Object oArea = request.getAttribute("area");
       if(oArea != null){
@@ -40,10 +41,10 @@
           out.println("It's null!! Close, but no cigar!!");
       }
       %>
-                    </td>
+                    
                         
-                </tr>
-            </table>
+               
+         
             
         </form>
         <h2>Circle Area</h2>
@@ -57,9 +58,10 @@
                 <tr>
                     <td> <input type="submit" name="submit" value="calculate"/></td>
                 </tr>
-                <tr>
-                    <td><p>Area of Circle:</p></td>
-                    <td>
+                 </table>
+                
+                    <p>Area of Circle:</p>
+                    
      <% Object oCircle = request.getAttribute("areaOfCircle");
       if(oCircle != null){
           out.println("The area of the circle is: " + oCircle);
@@ -67,9 +69,9 @@
           out.println("Close, but no cigar!!");
       }
       %>
-                    </td>
-                </tr>
-            </table>
+                    
+                
+           
         </form>
         
         <h2>Hypotenuse</h2>
@@ -87,8 +89,9 @@
                     <td><input type="submit" name="submit" value="calculate"/></td>
                 </tr>
                 <tr>
-                    <td><p>Hypotenuse of Triangle:</p></td>
-                    <td>
+               </table> 
+            <p>Hypotenuse of Triangle:</p>
+                    
       <%
       Object oThird = request.getAttribute("thirdSide");
       if(oThird != null){
@@ -98,10 +101,8 @@
       }
       
       %>
-                    </td>
                     
-                </tr>
-            </table>
+           
         </form>
         
     </body>
