@@ -37,7 +37,7 @@
           out.println("The area is: " + oArea);
           
       }else{
-          out.println("Cannot be null!! Close, but no cigar!!");
+          out.println("It's null!! Close, but no cigar!!");
       }
       %>
                     </td>
@@ -64,7 +64,7 @@
       if(oCircle != null){
           out.println("The area of the circle is: " + oCircle);
       }else{
-          out.println("Really!! It's null!! Close, but no cigar!!");
+          out.println("Close, but no cigar!!");
       }
       %>
                     </td>
@@ -94,7 +94,7 @@
       if(oThird != null){
           out.println("The hypotenuse is: " + oThird);
       }else{
-          out.println("I said it can't be null!! How many times must I tell you!!");
+          out.println("Really, really close!!");
       }
       
       %>
