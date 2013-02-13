@@ -24,6 +24,6 @@
           out.println("It's null!! Close, but no cigar!!");
       }
       %>
-        
+         <p><a href="index.jsp">Back to calculator home</a></p>
     </body>
 </html>
