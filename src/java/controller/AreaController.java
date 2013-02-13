@@ -18,7 +18,7 @@ import javax.servlet.RequestDispatcher;
  */
 @WebServlet(name = "AreaController", urlPatterns = {"/AreaController"})
 public class AreaController extends HttpServlet {
-    private static final String DESTINATION = "/index.jsp"; 
+    private static final String DESTINATION = "/areaanswer.jsp"; 
 
     
     /**

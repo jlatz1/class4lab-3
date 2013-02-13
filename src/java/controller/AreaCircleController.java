@@ -18,7 +18,7 @@ import javax.servlet.RequestDispatcher;
  */
 @WebServlet(name = "AreaCircleController", urlPatterns = {"/AreaCircleController"})
 public class AreaCircleController extends HttpServlet {
-      private static final String DESTINATION = "/index.jsp"; 
+      private static final String DESTINATION = "/circleanswer.jsp"; 
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and

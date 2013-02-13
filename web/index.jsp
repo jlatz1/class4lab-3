@@ -30,17 +30,7 @@
                 </tr>
                    </table>
                 
-                    <p>Area of Rectangle:</p>
-                    
-                         <% 
-      Object oArea = request.getAttribute("area");
-      if(oArea != null){
-          out.println("The area is: " + oArea);
-          
-      }else{
-          out.println("It's null!! Close, but no cigar!!");
-      }
-      %>
+  
                     
                         
                
@@ -60,15 +50,9 @@
                 </tr>
                  </table>
                 
-                    <p>Area of Circle:</p>
+                   
                     
-     <% Object oCircle = request.getAttribute("areaOfCircle");
-      if(oCircle != null){
-          out.println("The area of the circle is: " + oCircle);
-      }else{
-          out.println("Close, but no cigar!!");
-      }
-      %>
+    
                     
                 
            
@@ -90,17 +74,9 @@
                 </tr>
                 <tr>
                </table> 
-            <p>Hypotenuse of Triangle:</p>
+           
                     
-      <%
-      Object oThird = request.getAttribute("thirdSide");
-      if(oThird != null){
-          out.println("The hypotenuse is: " + oThird);
-      }else{
-          out.println("Really, really close!!");
-      }
-      
-      %>
+   
                     
            
         </form>

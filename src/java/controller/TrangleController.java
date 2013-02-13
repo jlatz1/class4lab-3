@@ -18,7 +18,7 @@ import javax.servlet.RequestDispatcher;
  */
 @WebServlet(name = "TrangleController", urlPatterns = {"/TrangleController"})
 public class TrangleController extends HttpServlet {
-          private static final String DESTINATION = "/index.jsp"; 
+          private static final String DESTINATION = "/triangleanswer.jsp"; 
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
